@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Page</title>
+    <style>
+        header, nav, main, footer, section { /*-- Styles for the header, navigation, main content, footer, and sections */
+            border: 1px solid black;
+            padding: 10px;
+        }
+        main {
+            display: flex;
+        }
+        .mainSection {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Flex Page</h1>
+</header>
+<nav>
+    Menu
+</nav>
+<main>
+    <section class="left">Left Section</section> <!--First content section -->
+    <section class="mainSection">Main Section</section> <!--Second content section -->
+</main>
+<footer>
+    Footer
+</footer>
+</body>
+</html>
