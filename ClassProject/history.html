@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First research subtopic">
+  <title>History | HTTP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <header class="site-header">
+    <div class="container header-layout">
+      <section class="site-brand" >Hypertext Transfer Protocol</section>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="key-concepts.html">Key Concepts </a></li>
+          <li><a href="history.html" aria-current="page">History </a></li>
+          <li><a href="security.html">Capabilities/Security </a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="references.html">References</a></li>           
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+  <h1>History and Evolution of HTTP</h1>    
+    <div class="history-layout"> <!-- The history-layout class is used to style the layout of the history section. -->
+      <aside class="history-sidebar">      <!-- The history-sidebar class is used to style the sidebar navigation for the history section. -->   
+        <nav aria-label="history-sections"> <!-- The nav element is used to group the sidebar navigation links. -->
+          <ul> <!-- The ul element is used to create a list of links to the different sections of the history content. -->
+            <li><a href="#Origins">Origins and HTTP/0.9</a></li>
+            <li><a href="#HTTP1.0">HTTP/1.0 and an Extensible Web</a></li>
+            <li><a href="#HTTP1.1">HTTP/1.1 and the Scalable Commercial Web</a></li>
+            <li><a href="#HTTP2">HTTP/2 and Modern Web Performance</a></li>
+            <li><a href="#HTTP3">HTTP/3 and QUIC</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    <div class="history-content">
+
+    <section id="Origins" class="hero">
+      <h2>Origins and HTTP/0.9</h2>
+        <p>Tim Berners-Lee proposed a networked hypertext system while working at CERN in 1989 and implemented the World Wide Web during 1990.</p>
+        <p>The earliest version of HTTP was extremely simple compared with modern HTTP. The version later known as HTTP/0.9 mainly supported a GET request followed by the path of the document being requested. Its main purpose was simply to retrieve hypertext documents from a server.</p>
+        <p>HTTP/0.9 servers returned the requested document directly to the client. Responses did not contain the status codes, headers, media-type information, or other metadata found in modern HTTP. This meant there were very few ways for the server to provide additional information about the response</p>
+        <p>This simple design worked well for the Web's original research environment, where relatively few computers and documents were involved. As the Web became public and began supporting more users and types of content, HTTP needed additional features.</p>
+    </section>
+      
+      
+    <figure class="topic-figure"> <!-- The topic-figure class is used to style the figure containing the image and caption. -->
+      <img src="images/timbernerslee.jpg" alt="Tim Berners-Lee" width="800" height="360">
+        <figcaption>Tim Berners-ee working at Cern, 1989. Photo Credit: Cern</figcaption>
+    </figure>
+    
+    <section id="HTTP1.0" class="hero">
+      <h2>HTTP/1.0 and an Extensible Web</h2>
+        <p>HTTP/1.0 was the first version of HTTP to be widely used on the public Web. It was defined in 1996 by RFC 1945 and introduced several new features, including the Content-Type header and the ability to include headers in both requests and responses.</p>
+        <p>HTTP/1.0 also introduced the concept of status codes, which allowed servers to communicate the outcome of a request to the client. This made it easier for clients to handle errors and for servers to provide more information about the response.</p>
+        <p>HTTP/1.0 was a significant step forward for the Web, but it still had limitations. For example, it did not support persistent connections, which meant that a new connection had to be established for each request. This led to increased latency and reduced performance.</p>
+        <p>Despite these limitations, HTTP/1.0 laid the foundation for the future development of the Web and paved the way for the introduction of HTTP/1.1</p>
+    </section>
+
+    <section id="HTTP1.1" class="hero">
+      <h2>HTTP/1.1 and the Scalable Commercial Web</h2>
+        <p>HTTP/1.1 introduced persistent connections, which allowed a client and server to reuse the same TCP connection for multiple requests and responses. This reduced the time and network resources needed to repeatedly create new connections.</p>
+        <p>HTTP/1.1 also introduced other improvements, such as the Host header, which allows multiple domains to be hosted on a single IP address, and the ability to send chunked responses, which enables servers to stream content to clients without having to buffer the entire response.</p>
+        <p>HTTP/1.1 was standardized in 1997, revised in 1999, reorganized in 2014, and updated again in 2022.</p>
+    </section>
+    
+    <section id="HTTP2" class="hero">
+      <h2>HTTP/2 and Modern Web Performance</h2>
+        <p>HTTP/2 changed how HTTP messages are transmitted by dividing them into smaller units called binary frames. These frames are organized into separate logical streams, allowing the client and server to manage several exchanges over the same connection</p>
+        <p>HTTP/2 also introduced header compression, which reduces the amount of data that needs to be transmitted over the network.</p>
+        <p>HTTP/2 was standardized in 2015 and is now widely supported by modern web browsers and servers. It has significantly improved the performance of the Web, especially for complex web applications that require multiple requests and responses.</p>
+    </section>
+
+    <figure class="topic-figure">
+      <img src="images/httpevo.png" alt="Diagram showing evolution of HTTP protocols" width="250" height="360"/>
+    </figure>
+    
+    <section id="HTTP3" class ="hero">
+      <h2>HTTP/3 and QUIC</h2>
+        <p>HTTP/3 is the latest version of the HTTP protocol, which is built on top of the QUIC transport protocol. QUIC is a new transport protocol that aims to reduce latency and improve performance over traditional TCP-based connections.</p>
+        <p>HTTP/3 was standardized in 2022 and is beginning to be adopted by modern web browsers and servers. It has the potential to further improve the performance of the Web, especially for applications that require low latency and high reliability.</p>  
+    </section>
+  
+  </div>
+    </div>
+
+
+    <table class="HTTP-table">  <!-- The HTTP-table class is used to style the table containing the summary of HTTP versions. -->
+      <caption>HTTP Version Summary</caption>
+      <thead> <!-- The thead element is used to group the header content of the table. -->
+        <tr> <!-- The tr element is used to create a row in the table. -->
+          <th>Version</th>
+          <th>Development Year</th>
+          <th>Key Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTTP/0.9</td>
+          <td>1991</td>
+          <td>Simple GET requests, no headers, no status codes</td>
+        </tr>
+        <tr>
+          <td>HTTP/1.0</td>
+          <td>1996</td>
+          <td>Headers, status codes, Content-Type header, non-persistent connections</td>
+        </tr>
+        <tr>
+          <td>HTTP/1.1</td>
+          <td>1997-2022</td>
+          <td>Persistent connections, Host header, chunked responses, improved caching and content negotiation</td>
+        </tr>
+        <tr>
+          <td>HTTP/2</td>
+          <td>2015</td>
+          <td>Binary framing, multiplexing, header compression, server push</td>
+        </tr>
+        <tr>
+          <td>HTTP/3</td>
+          <td>2022</td>
+          <td>Built on QUIC transport protocol, reduced latency, improved performance over unreliable networks</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </main>
+
+   <footer class="site-footer">
+    <div class="container">
+      <p>This website is an IT 3202 Course Project. Visit the course website <a href="https://ksuweb.github.io/IT3203/">here</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

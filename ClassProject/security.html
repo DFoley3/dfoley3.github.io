@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capabilities and Security">
+  <title>Capabilities and Security</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="site-header">
+    <div class="container header-layout">
+      <section class="site-brand" >Hypertext Transfer Protocol</section>
+        <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="key-concepts.html">Key Concepts </a></li>
+          <li><a href="history.html">History </a></li>
+          <li><a href="security.html" aria-current="page">Capabilities/Security</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="references.html">References</a></li>           
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <h1>Capabilities and Security</h1>
+        
+    <section class="hero">
+      <h2>Caching and Conditional Requests</h2>
+        <p><strong>Caching</strong> stores copies of previously requested web resources so they can be reused instead of needing to be downloaded again.</p>
+        <p>The <strong>Cache-Control</strong> Header tells browsers how stored content should be handled.</p>
+        <p>Caching must be handled carefully because a server may provide different versions of the same resource.</p>
+    </section>
+    
+    <section class="hero">
+      <h2>Cookies and Authentication</h2>
+        <p><strong>Cookies</strong> are small pieces of data that a server can store on a client to help identify the client and maintain state.</p>
+        <p>Cookies are often used for authentication, which is the process of verifying a user's identity.</p>
+        <p>Authentication is important for protecting sensitive information and ensuring that only authorized users can access certain resources.</p>
+    </section>
+      
+    <section class="hero">
+      <h2>HTTPS and Encryption</h2>
+        <p>HTTPS is a secure version of HTTP that uses encryption to protect data transmitted between a client and server.</p>
+        <p>Encryption helps prevent eavesdropping and tampering with data, ensuring that sensitive information remains private and secure.</p>
+        <p>HTTPS is widely used for online banking, e-commerce, and other applications where security is critical.</p>
+        <p>Cross-Origin Resource Sharing (CORS) controls when browser based scripts are allowed to access resources from different origins.</p>
+    </section>
+      
+    <figure class="topic-figure">
+      <img src="images/cookies.png" alt="Cookies and Authentication" width="600" height="500" >
+    </figure> 
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>This website is an IT 3202 Course Project. Visit the course website <a href="https://ksuweb.github.io/IT3203/">here</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

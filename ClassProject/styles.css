@@ -1,0 +1,369 @@
+
+/* General Styling */
+
+body { /* Sets the default styles for the body element. */
+  margin: 0;
+  font-family: Verdana;
+  font-size: 16px;
+  color: #000c01;
+  background-color: #a4a4a594;
+}
+
+* { box-sizing: border-box; } /* Ensures padding and border are included in the element's total width and height. */
+
+ html { scroll-behavior: smooth; } /* Smooth scrolling for links. */
+
+
+.container {  /* Styles the main container for the content. */
+  width: 90%; /* Sets the width of the container to 90% of the viewport width. */
+  max-width: 1080px; /* Sets a maximum width for the container to prevent it from becoming too wide on large screens. */
+  margin: 0 auto; 
+}
+
+a { 
+  color: #12669b; 
+}
+
+
+/* Header and Navigation Styling*/
+
+.site-header { /* Styles the header of the site. */
+  background: #183456; 
+  border-bottom: 4px solid #f7af14; 
+}
+
+.header-layout { /* Styles the layout of the header using flexbox. */
+  display: flex; /* Uses flexbox to layout the header content. */
+  flex-wrap: wrap; /* Allows the header content to wrap onto multiple lines on smaller screens. */
+  gap: 0; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 1rem 0;
+}
+
+ .site-brand { /* Styles the site branding . */
+  color: #fff; /* Sets the text color to white. */
+  font-weight: 400; 
+  font-size: 3rem; 
+  text-decoration: none; 
+}
+
+.nav-list { 
+  display: flex; /* Uses flexbox to layout the navigation links. */
+  flex-wrap: wrap; /* Allows the navigation links to wrap onto multiple lines on smaller screens. */
+  gap: .35rem; 
+  list-style: none; /* Removes the default list styling. */
+  padding: 0; 
+  margin: 0; 
+}
+
+.nav-list a { 
+  display: inline-block; /* Makes the links behave like inline-block elements, allowing for padding and margin. */
+  padding: .4rem .65rem; 
+  border-radius: 5px; 
+  color: #fff; 
+  font-size: 1.1rem;
+  text-decoration: none; /* Removes the default underline from links. */
+}
+
+/* Attribute selector: highlights the current page. */
+.nav-list a[aria-current="page"] { /* Styles the link for the current page to make it stand out. */
+  color: #f5f10c; 
+  text-decoration:underline;
+}
+
+.nav-list a:hover { /* Styles the navigation links on hover to provide visual feedback. */
+  color: #183456; 
+  background: #d9ecfb; 
+}
+
+
+/* Main Content Stylings*/
+
+main { 
+  padding-top: 2.2rem; 
+  padding-bottom: 3rem; 
+  min-height: 65vh; 
+}
+
+section { 
+  margin: 0 0 2.3rem; 
+}
+
+h1, h2, h3 { 
+  line-height: 1.25; 
+  color: #183456; 
+}
+
+h1 { 
+  font-size: clamp(1.8rem, 4vw, 2.6rem); 
+  margin-top: 0;
+}
+
+h2 { 
+  font-size: 1.5rem; 
+  margin-top: 0;
+  text-decoration: underline; 
+}
+
+h3 { 
+  font-size: 1.15rem; 
+  margin-top: 0; 
+}
+
+
+
+/* Home Page Styling */
+
+.hero { /* Styles the hero section on the home page Used to highlight the main message.*/
+  background: #e7f1fa; 
+  border: 1px solid #cadfed; 
+  border-radius: 10px; 
+  padding: 2rem; 
+}
+
+/* ID selector: special styling for home page title. */
+#home-title { /* Styles the title of the home page. */
+  margin-bottom: .4rem;
+  text-decoration: underline;
+  text-decoration-skip-ink:none;
+} 
+
+
+/* Key Concepts Styling */
+
+.card-grid, .concept-grid { /* Styles the grid layout for the cards on the key concepts page. */
+  display: grid; 
+  grid-template-columns: repeat(1, minmax(230px, 1fr)); 
+  justify-content: center; /* Centers the grid items horizontally within the container. */
+  gap: 1.1rem; 
+}
+
+.card { /* Styles each individual card in the grid. */
+  padding: 1.2rem; 
+  background: #fff; 
+  border: 1px solid #d5dfe9; 
+  border-radius: 8px;
+}
+
+.card p {
+  font-size: 1.25rem;
+}
+
+.term-list li, .references-list li { /* Styles the list items in the term and references lists. */
+  margin-bottom: .6rem;
+}
+
+
+/* Styling for the History Page */
+.history-content section {
+  margin-bottom: 1rem;
+}
+
+.history-layout { /* Styles the layout for the history page using CSS Grid. */
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+}
+
+.history-sidebar { /* Styles the sidebar on the history page. */
+  background: #e7f1fa;
+  border: 2px solid rgb(164, 169, 209);
+  border-radius: 8px;
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+  align-self: start;
+}
+
+.history-sidebar ul { /* Styles the unordered list in the history sidebar. */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-sidebar li { /* Styles the list items in the history sidebar. */
+  list-style: none;
+}
+
+.history-sidebar a { /* Styles the links in the history sidebar. */
+  display: block;
+  padding: 0.6rem;
+  color:#043a5c;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.history-sidebar a:hover { /* Styles the links in the history sidebar on hover to provide visual feedback. */
+  background: #d9ecfb;
+  color: #12669b;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+/* About Me Styling */
+
+.about-container { /* Styles the container for the about me section. */
+  background: #e7f1fa;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-content { /* Styles the content of the about me section. */
+  display: flex; /* Uses flexbox to layout the photo and text side by side. */
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-photo { /* Styles the photo in the about me section. */
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.about-text { 
+  flex: 1; /* Allows the text to take up the remaining space in the flex container. */
+}
+
+.about-text p { /* Styles the paragraphs in the about me section. */
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+
+/* Hobbies Section Styling */
+
+.hobbies-grid { /* Styles the grid layout for the hobbies section. */
+  display: grid; /* Uses CSS Grid to layout the hobbies in a grid format. */
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns. */
+  gap: 0.75rem 1rem;
+  padding-left: 1.0rem;
+  margin-top: 1rem;
+}
+
+.hobbies-grid li {
+  list-style-type: disc; /* Uses disc bullets for the list items. */
+  padding-left: 0.25rem;
+}
+
+.hobby-pics {
+  display: grid; /* Uses CSS Grid to layout the hobby pictures in a grid format. */
+  grid-template-columns:repeat(3, 1fr);
+  gap: 5px;
+  margin: 1.5rem 0;
+  max-width: 700px;
+}
+
+.hobby-pics img {
+  width: 350px;
+  height: 400px;
+}
+
+/* Styling for the Work History section */
+
+.work-history {
+  margin-top: 2rem;
+  
+}
+.work-history h2 {
+  text-align: center;
+}
+.job-grid {
+  display: grid; /* Uses CSS Grid to layout the job cards in a grid format. */
+  grid-template-columns: minmax(250px, 600px); /* Creates a single column that can grow and shrink between 250px and 600px. */
+  justify-content: center; /* Centers the grid items horizontally within the container. */
+  gap: .5rem;
+}
+
+.job-card { /* Styles each individual job card. */
+  background: #fff;
+  border: 1px solid #277dd3;
+  border-radius: 25px;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.job-card p { /* Styles the paragraphs within each job card. */
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.job-card h3 {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  margin: .5rem;
+}
+
+/*  IMAGES   */
+
+.topic-figure { 
+  margin: 1.5rem auto; 
+  max-width: 1000px;
+}
+
+.topic-figure img { 
+  display: block; 
+  width: 100%; 
+  height: auto; 
+  border: 1px solid #cbd9e7; 
+  border-radius: 8px;   
+}
+
+figcaption { /* Styles the caption for images. */
+  font-size: 1rem; 
+  color: #0b0c0e; 
+  padding-top: .3rem; 
+}
+
+
+/* TABLE STYLING  */
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; /* Ensures that the borders of the table cells are collapsed into a single border. */
+  background: #fff; 
+  margin-top: 1rem;
+}
+
+caption { 
+  text-align: left; 
+  font-weight: bold; 
+  margin-bottom: .5rem; 
+}
+
+th, td { /* Styles for table header and data cells. */
+  border: 1px solid #e3e6e9; 
+  text-align: left; 
+  padding: .75rem; 
+}
+
+th { 
+  background: #4882b4;
+  color: #fff;
+}
+
+
+/* FOOTER STYLING */
+
+.site-footer { 
+  background: #183456; 
+  color: #faf8f8; 
+  padding: 1.4rem 0;
+}
+
+.site-footer p { 
+  margin: .25rem 0; 
+  text-align: center;
+}
+
+.site-footer a { 
+  color: #cef070; 
+}
+
+.site-footer a:hover { 
+  color: #fff;
+}

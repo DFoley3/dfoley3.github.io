@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>HTTP Evolution Homepage</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h1>HTTP Evolution Homepage</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | HTTP</title>  
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<nav>
-    <nav style="background-color: lightblue; padding: 10px;">
-           
-            <a href="index.html">Home</a>
-            
-            <a href="keyconcepts.html">Key Concepts</a>
-            
-            <a href="topic1.html">Topic 1</a>
-            
-            <a href="topic2.html">Topic 2</a>
-            
-            <a href="about.html">About Me</a>
-            
-            <a href="references.html">References</a>
-            
-            
-     </nav>       
+<body> <!-- The header is the same on all pages. -->
+  <header class="site-header"> 
+    <div class="container header-layout">
+      <section class="site-brand" >Hypertext Transfer Protocol</section>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home </a></li>
+          <li><a href="key-concepts.html">Key Concepts </a></li>
+          <li><a href="history.html">History </a></li>
+          <li><a href="security.html">Capabilities/Security </a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="references.html">References</a></li>           
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<body>
- 
-<p>This page will contain a summary and directory of the content.</p>
+  <main id="main-content" class="container"> <!-- The main content of the page is unique to each page. -->
+    <section class="hero" aria-labelledby="home-title"> <!-- The hero section is a common design pattern that highlights important content. -->
+      <h1 id="home-title">Hypertext Transfer Protocol</h1>
+        <p>Hypertext Transfer Protocol (HTTP) is the set of rules that lets web browsers, apps, and servers talk to each other across the World Wide Web. </p>
+        <p>Whenever you click a link, load a web page, or send data in an app, HTTP is the underlying system making that exchange happen. </p>
+    </section>
+
+    <section class="hero" aria-labelledby="terms-title">
+      <h2 id="terms-title">Key Terms</h2> <!-- This section lists key terms related to HTTP. -->
+      <ul class="term-list"> <!-- The term-list class is used to style the list of terms. -->
+        <li><strong>World Wide Web:</strong> a system of interconnected documents and resources accessed via the Internet, primarily through web browsers.</li>
+        <li><strong>Uniform Resource Identifier (URI):</strong> sequence of characters that identifies an abstract or physical resource on the internet.</li>
+        <li><strong>Uniform Resource Locator (URL):</strong> a specific type of URI that provides the means to access a resource on the internet.</li>
+        <li><strong>Content Delivery Network (CDN):</strong> a network of distributed servers that deliver web content to users based on their geographic location.</li>
+        <li><strong>Multiplexing:</strong> the process of combining multiple signals into one signal for transmission over a shared medium.</li>
+        <li><strong>Metadata:</strong> data that provides information about other data, such as the title, author, or creation date of a document.</li>
+        <li><strong>User Agent:</strong>Any program that communicates with a web server using HTTP. Web Browsers are the primary example.</li>
+        <li><strong>Proxy:</strong> a server that acts on behalf of another server, typically for the purpose of routing requests or adding additional functionality.</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="site-footer"> <!-- The footer is the same on all pages. -->
+    <div class="container">      
+      <p>This website is an IT 3202 Course Project. Visit the course website <a href="https://ksuweb.github.io/IT3203/">here</a>.</p> <!-- Required class-project notice and course link. -->
+    </div>
+  </footer>
 
 </body>
+
 </html>
